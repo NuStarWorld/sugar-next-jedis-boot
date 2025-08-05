@@ -18,34 +18,34 @@ package team.idealstate.sugar.next.boot.jedis;
 
 import java.util.Map;
 import lombok.Data;
-import lombok.NonNull;
+import team.idealstate.sugar.validate.annotation.NotNull;
 import team.idealstate.sugar.next.context.annotation.component.Configuration;
 
 @Configuration(uri = "/database/Jedis.yml", release = "bundled:/database/Jedis.yml")
 @Data
 public class JedisConfiguration {
 
-    @NonNull
+    @NotNull
     private String host;
 
-    @NonNull
+    @NotNull
     private Integer port;
 
-    @NonNull
+    @NotNull
     private Integer database;
 
-    @NonNull
+    @NotNull
     private String username;
 
-    @NonNull
+    @NotNull
     private String password;
 
-    @NonNull
+    @NotNull
     private Integer timeout;
 
-    @NonNull
+    @NotNull
     private Boolean ssl;
 
-    @NonNull
+    @NotNull
     private Map<String, Object> properties;
 }
