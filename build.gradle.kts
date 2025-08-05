@@ -43,7 +43,10 @@ repositories {
 }
 
 dependencies {
-    api(libs.sugar.next)
+    compileOnly(libs.sugar.next)
+    annotationProcessor(libs.sugar.next)
+    testCompileOnly(libs.sugar.next)
+    testAnnotationProcessor(libs.sugar.next)
 
     api(libs.jedis)
 
@@ -51,10 +54,6 @@ dependencies {
     annotationProcessor(libs.lombok)
     testCompileOnly(libs.lombok)
     testAnnotationProcessor(libs.lombok)
-    compileOnly(libs.sugar)
-    annotationProcessor(libs.sugar)
-    testCompileOnly(libs.sugar)
-    testAnnotationProcessor(libs.sugar)
 }
 
 publishing {
