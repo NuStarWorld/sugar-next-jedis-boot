@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "team.idealstate.sugar.boot"
-version = "0.1.0"
+version = "0.1.1-SNAPSHOT"
 
 java {
     toolchain {
@@ -51,6 +51,10 @@ dependencies {
     annotationProcessor(libs.lombok)
     testCompileOnly(libs.lombok)
     testAnnotationProcessor(libs.lombok)
+    compileOnly(libs.sugar)
+    annotationProcessor(libs.sugar)
+    testCompileOnly(libs.sugar)
+    testAnnotationProcessor(libs.sugar)
 }
 
 publishing {
