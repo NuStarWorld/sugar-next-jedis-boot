@@ -18,8 +18,8 @@ package team.idealstate.sugar.next.boot.jedis;
 
 import java.util.Map;
 import lombok.Data;
-import team.idealstate.sugar.validate.annotation.NotNull;
 import team.idealstate.sugar.next.context.annotation.component.Configuration;
+import team.idealstate.sugar.validate.annotation.NotNull;
 
 @Configuration(uri = "/database/Jedis.yml", release = "bundled:/database/Jedis.yml")
 @Data
